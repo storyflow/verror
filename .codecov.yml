@@ -1,0 +1,15 @@
+parsers:
+  javascript:
+    enable_partials: yes
+
+coverage:
+  status:
+    patch:
+      default:
+        target: auto
+        base: auto
+        threshold: 1%
+        flags:
+          - unit
+          - integration
+        only_pulls: true
