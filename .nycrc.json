@@ -1,0 +1,6 @@
+{
+  "include": ["index.js"],
+  "reporter": ["html", "text", "text-summary", "lcov"],
+  "all": true,
+  "report-dir": "nyc_coverage"
+}
