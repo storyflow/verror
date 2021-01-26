@@ -1,5 +1,3 @@
-/* eslint no-unused-expressions: 0 */
-
 'use strict';
 
 const { expect } = require('chai');
@@ -41,7 +39,7 @@ describe('VError unit tests', () => {
     const error = await throws().catch((err) => err);
     expect(error.message).to.eql('boom');
     expect(error.code).to.eql(HttpStatus.INTERNAL_SERVER_ERROR);
-    expect(error.stack).to.not.be.undefined;
+    expect(error.stack).to.not.eql(undefined);
     expect(error.name).to.eql('verror');
     expect(error.dateTime.valueOf()).to.be.within(Date.now() - 10, Date.now() + 10);
     expect(error.data).to.eql(undefined);
@@ -55,7 +53,7 @@ describe('VError unit tests', () => {
     const error = await throws().catch((err) => err);
     expect(error.message).to.eql('boom');
     expect(error.code).to.eql(HttpStatus.BAD_REQUEST);
-    expect(error.stack).to.not.be.undefined;
+    expect(error.stack).to.not.eql(undefined);
     expect(error.name).to.eql('verror');
     expect(error.dateTime.valueOf()).to.be.within(Date.now() - 10, Date.now() + 10);
     expect(error.data).to.eql(undefined);
@@ -69,7 +67,7 @@ describe('VError unit tests', () => {
     const error = await throws().catch((err) => err);
     expect(error.message).to.eql('boom');
     expect(error.code).to.eql(HttpStatus.INTERNAL_SERVER_ERROR);
-    expect(error.stack).to.not.be.undefined;
+    expect(error.stack).to.not.eql(undefined);
     expect(error.name).to.eql('verror');
     expect(error.dateTime.valueOf()).to.be.within(Date.now() - 10, Date.now() + 10);
     expect(error.data).to.eql({ foo: 'bar' });
