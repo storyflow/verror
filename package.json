@@ -78,9 +78,9 @@
     "lint:quiet": "yarn lint --quiet",
     "lint:report": "yarn lint --format json -o sonar/report.json",
     "test": "yarn test:run",
-    "test:integration": "nyc mocha --opts ./config/tests/mocha.opts 'tests/**/*.it.js'",
+    "test:integration": "nyc --report-dir=nyc_coverage_integration mocha --opts ./config/tests/mocha.opts 'tests/**/*.it.js'",
     "test:run": "nyc mocha --opts ./config/tests/mocha.opts 'tests/**/*.{unit,it}.js'",
     "test:single": "mocha --paths --opts ./config/tests/mocha.opts",
-    "test:unit": "nyc mocha --opts ./config/tests/mocha.opts 'tests/**/*.unit.js'"
+    "test:unit": "nyc --report-dir=nyc_coverage_unit mocha --opts ./config/tests/mocha.opts 'tests/**/*.unit.js'"
   }
 }

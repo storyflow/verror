@@ -62,7 +62,7 @@ typings/
 .idea
 
 # Code Coverage
-nyc_coverage
+nyc_coverage*
 
 #Sonar report
 sonar/
