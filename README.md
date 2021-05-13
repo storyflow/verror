@@ -1,3 +1,6 @@
+[![circle ci](https://circleci.com/gh/voiceflow/verror.svg?style=shield&circle-token=a08e5f1e349765b48c55ac7794db0acfd18a724f)](https://circleci.com/gh/voiceflow/verror)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=voiceflow_verror&metric=coverage)](https://sonarcloud.io/dashboard?id=voiceflow_verror)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=voiceflow_verror&metric=alert_status)](https://sonarcloud.io/dashboard?id=voiceflow_verror)
 # verror
 Voiceflow error class
 
