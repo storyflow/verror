@@ -37,7 +37,7 @@
     "prettier-eslint-cli": "^5.0.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   },
   "files": [
     "index.js"
@@ -82,5 +82,6 @@
     "test:run": "nyc mocha --opts ./config/tests/mocha.opts 'tests/**/*.{unit,it}.js'",
     "test:single": "mocha --paths --opts ./config/tests/mocha.opts",
     "test:unit": "nyc --report-dir=nyc_coverage_unit mocha --opts ./config/tests/mocha.opts 'tests/**/*.unit.js'"
-  }
+  },
+  "types": "index.d.ts"
 }
