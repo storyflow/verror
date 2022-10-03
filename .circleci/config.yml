@@ -9,7 +9,7 @@ defaults:
         - /cherry-pick-rebase-pull-request-.*/
 
 orbs:
-  vfcommon: voiceflow/common@0.0.246
+  vfcommon: voiceflow/common@0.0.348
   sonarcloud: sonarsource/sonarcloud@1.0.2
 
 jobs:
@@ -31,7 +31,7 @@ workflows:
           context: dev-test
           filters:
             <<: *autorebase_filters
-            
+
       - vfcommon/release:
           context: dev-test
           requires:
