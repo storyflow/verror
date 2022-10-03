@@ -40,7 +40,8 @@
     "node": ">=14"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "homepage": "https://github.com/storyflow/verror#readme",
   "husky": {
