@@ -10,7 +10,7 @@ defaults:
 
 orbs:
   vfcommon: voiceflow/common@0.0.348
-  sonarcloud: sonarsource/sonarcloud@1.0.2
+  sonarcloud: sonarsource/sonarcloud@2.0.0
 
 jobs:
   build-and-test:
